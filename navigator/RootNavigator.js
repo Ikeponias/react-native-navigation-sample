@@ -6,15 +6,15 @@ const HomeScreen = ({ navigation }) => (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Home Screen</Text>
         <Button
-            onPress={() => navigation.navigate('Details')}
-            title="Go to Details"
+            onPress={() => navigation.navigate('Profile')}
+            title="Go to Profile"
         />
     </View>
 );
 
-const DetailsScreen = () => (
+const ProfileScreen = () => (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Details Screen</Text>
+        <Text>Profile Screen</Text>
     </View>
 )
 
@@ -25,10 +25,10 @@ const RootNavigator = createStackNavigator({
             headerTitle: 'Home',
         },
     },
-    Details: {
-        screen: DetailsScreen,
+    Profile: {
+        screen: ProfileScreen,
         navigationOptions: {
-            headerTitle: 'Details',
+            headerTitle: 'Profile',
         },
     },
 });
